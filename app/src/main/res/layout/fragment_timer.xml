@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+>
+
+
+
+    <!--
+    <TextView
+        android:id="@+id/record"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="73dp"
+        android:layout_marginStart="166dp"
+        android:layout_toEndOf="@+id/btn_start"
+        android:padding="10dp"
+        android:textSize="20sp" />
+  -->
+
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/time_out"
+        android:layout_marginTop="148dp"
+        android:layout_weight="1"
+        android:text="시작" />
+
+    <Button
+        android:id="@+id/btn_rec"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="113dp"
+        android:layout_marginTop="133dp"
+        android:layout_weight="1"
+        android:enabled="true"
+        android:text="기록" />
+
+</RelativeLayout>
+

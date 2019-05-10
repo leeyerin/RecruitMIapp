@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/diary_date"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/diary_date2"
+        android:layout_marginTop="41dp"
+        android:hint="Date : "
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <EditText
+        android:id="@+id/diary_date2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/diary_date"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:hint="Subject : "
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="107dp" />
+
+    <EditText
+        android:id="@+id/diary_date3"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_alignStart="@+id/diary_date2"
+        android:layout_below="@+id/diary_date2"
+        android:layout_marginTop="20dp"
+        android:hint="Contents"
+        android:singleLine="false"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="164dp" />
+
+    <Button
+        android:id="@+id/insert_diary_sql"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+
+        android:layout_alignBaseline="@+id/cancel"
+        android:layout_alignBottom="@+id/cancel"
+        android:layout_alignStart="@+id/diary_date3"
+        android:layout_marginStart="19dp"
+        android:background="@drawable/round_btn"
+        android:text="작성하기"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="431dp" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+
+        android:layout_alignEnd="@+id/diary_date"
+        android:layout_below="@+id/diary_date3"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/round_btn"
+        android:text="취소하기"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="204dp"
+        tools:layout_editor_absoluteY="431dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/diary_date"
+        android:layout_marginEnd="22dp"
+        android:background="#FFFFFF"
+        app:srcCompat="@drawable/calendar232"
+        tools:layout_editor_absoluteX="324dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+
+</RelativeLayout>

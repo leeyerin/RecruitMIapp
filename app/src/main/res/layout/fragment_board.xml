@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <!--
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"> <-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/board_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40dp"
+            android:hint="@string/board_title_hint" />
+
+        <EditText
+            android:id="@+id/board_content"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/board_title"
+            android:layout_marginTop="37dp"
+            android:hint="글 내용을 입력하세요." />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/board_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="13dp"
+            android:layout_weight="1"
+            android:background="@drawable/gallery32" />
+
+        <ImageView
+            android:id="@+id/photo_view"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignStart="@+id/imageButton"
+            android:layout_below="@+id/board_title"
+            android:scaleType="fitXY"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/picture64" />
+
+
+        <!--> </ScrollView> <-->
+        <Button
+            android:id="@+id/board_insert"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_btn"
+            android:text="글 작성하기" />
+    </RelativeLayout>
+
+</RelativeLayout>
+

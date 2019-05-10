@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <tabs>
+        <tab
+            id="@+id/tab_home"
+            title="home" />
+        <tab
+            id="@+id/tab_board"
+            title="board" />
+        <tab
+            id="@+id/tab_diary"
+            title="diary" />
+        <tab
+            id="@+id/stop_watch"
+            title="watch" />
+    </tabs>
+</PreferenceScreen>

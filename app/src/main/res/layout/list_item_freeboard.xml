@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/list_item_freeboard_title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:textStyle="bold"
+        tools:text="Freeboard Title" />
+
+    <TextView
+        android:id="@+id/list_item_freeboard_good_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/list_item_freeboard_ripple_text_view"
+        android:layout_marginTop="13dp"
+        android:textStyle="bold"
+        tools:text="Goods" />
+
+    <TextView
+        android:id="@+id/list_item_freeboard_ripple_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/list_item_freeboard_title_text_view"
+        tools:text="ripple" />
+
+</RelativeLayout>
